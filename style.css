@@ -1,0 +1,100 @@
+/* Common rules  */
+:root {
+    --background-color-main: #E5E5E5;
+
+    --text-color-main: #FFFFFF;
+    --text-color-second: rgba(157, 164, 189, 1);
+    --text-color-third: rgba(48, 48, 48, 1);
+    --text-color-forth: rgba(85, 85, 85, 1);
+
+    --accent-color: rgba(255, 108, 0, 1);
+    --element-color: #303030;
+
+
+}
+
+body {
+    background-color: var(--background-color-main);
+    font-family: 'Open Sans', sans-serif;
+}
+ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+}
+img {
+    display: block;
+}
+a {
+    text-decoration: none;
+}
+
+.container {
+    width: 1600px;
+}
+
+/* HEADER -ASIDE  */
+.header {
+
+}
+.header-wrap {
+    padding-left: 137px;
+}
+
+.header-aside {
+    position: relative;
+    width: 155px;
+    height: 680px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding-left: 82px;
+    padding-top: 370px;
+    padding-right: 58px;
+    padding-bottom: 40px;
+}
+.logo-link {
+    position: absolute;
+    top: 32px;
+    left: 55px;
+}
+.logo {
+    fill: var(--element-color);
+
+}
+.social-list.aside {
+    display: flex;
+    flex-direction:row-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    transform: rotate(-90deg);
+
+}
+.aside.container {
+    
+}
+.social-item {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: calc(15 / 11);
+    letter-spacing: 0.2em;
+
+}
+.social-link {
+        color: var(--element-color);
+}
+.social-link:hover,
+.social-link:focus {
+    color: var(--accent-color);
+}
+.line {
+    display: block;
+    transform: rotate(-90deg);
+}
